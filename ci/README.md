@@ -91,7 +91,7 @@ $ echo "1.0.0-rc.1" > target/version/number
 Now we can execute our `build` task and specify the version folder as an input.
 
 ```
-$ fly -t lite execute -c ci/tasks/build.yml -i pcfdemo=. -i version=target/version
+$ fly -t lite execute -c ci/tasks/build.yml -i pcfdemo=. -i version=target/version  --include-ignored
 ```
 
 ## Configuring your pipeline
